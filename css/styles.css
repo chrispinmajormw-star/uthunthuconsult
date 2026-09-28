@@ -72,3 +72,8 @@ header .w{max-width:1280px}
 #lb img{max-width:100%;max-height:78vh;border-radius:14px}#lb p{color:#fff;margin:14px 0 0;text-align:center}
 #lx{position:absolute;top:14px;right:22px;background:none;border:0;color:#fff;font-size:2.6rem;cursor:pointer;line-height:1}
 .logo .lg{height:40px;width:auto}.logo:has(.lg):before{display:none}.logo:has(.lg) .lt{display:none}
+.flg{height:46px;width:auto;display:block;margin-bottom:14px}.flg.inv{filter:brightness(0) invert(1)}
+footer div:has(>.flg) .fn{display:none}
+.fb{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;align-items:center;font-size:.85rem;color:#c9c9ea}
+footer .fb a{color:#e8e8f8;text-decoration:none}footer .fb a:hover{text-decoration:underline}
+@media(min-width:900px){.fb{flex-wrap:nowrap;white-space:nowrap}}
