@@ -1,2 +1,2 @@
 // Paste your Supabase values (Project Settings > API). The anon key is safe to publish when RLS is on.
-window.CFG={SUPABASE_URL:"",SUPABASE_ANON_KEY:""};
+window.CFG={SUPABASE_URL:"https://brscqjaymuiqoxhrwvaz.supabase.co",SUPABASE_ANON_KEY:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJyc2NxamF5bXVpcW94aHJ3dmF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA2Mjc3NjYsImV4cCI6MjEwNjIwMzc2Nn0.8tiRT7MFcNqScWS0aqCYQB9czlwc5VeHGtGvZn74W_U"};
