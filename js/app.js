@@ -1,8 +1,8 @@
 P.nf=()=>`<section><div class="w"><h1>Page not found</h1><p><a class="btn" href="#/">Back to Home</a></p></div></section>`;
 const S=" | Uthunthu Consultancy";
-const T={"":["home","Uthunthu Consultancy | Building Complete People"],about:["about","About Us"+S],bsd:["bsd","The BSD Model"+S],services:["services","Services"+S],impact:["impact","Our Impact"+S],gallery:["gallery","Gallery"+S],events:["events","Events"+S],contact:["contact","Contact Us"+S],admin:["admin","Admin"+S]};
-function route(){const k=location.hash.replace(/^#\/?/,"");const t=T[k]||["nf","Not found"+S];
-$("app").innerHTML=P[t[0]]();document.title=t[1];window.scrollTo(0,0);
+const T={"":["home","Uthunthu Consultancy | Building Complete People"],about:["about","About Us"+S],bsd:["bsd","The BSD Model"+S],services:["services","Services"+S],impact:["impact","Our Impact"+S],gallery:["gallery","Gallery"+S],events:["events","Events"+S],contact:["contact","Contact Us"+S],admin:["admin","Admin"+S],legal:["legal","Legal & Privacy"+S]};
+function route(){const raw=location.hash.replace(/^#\/?/,"");const [k,sub]=raw.split("/");const t=T[k]||["nf","Not found"+S];
+$("app").innerHTML=P[t[0]]();document.title=t[1];if(sub&&$(sub))$(sub).scrollIntoView();else window.scrollTo(0,0);
 document.querySelectorAll(".links a:not(.btn)").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#/"+k));
 $("lk").classList.remove("open");
 const bp=$("bp");
