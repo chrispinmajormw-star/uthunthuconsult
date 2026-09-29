@@ -1,4 +1,4 @@
-P.contact=()=>`<section><div class="w"><h1>Contact Us</h1><div class="grid"><div><p><strong>Office:</strong> Plot 12/324, Lilongwe, Malawi</p><p><a class="btn g" href="tel:+265888355602">Call +265 888 355 602</a></p><p><a class="btn g" href="tel:+265994040040">Call +265 994 040 040</a></p></div>
+P.contact=()=>`<section><div class="w"><h1>Contact Us</h1><div class="grid"><div><p><strong>Office:</strong> Area 43/692, Capital City, Lilongwe</p><p><a class="btn g" href="tel:+265888355602">Call +265 888 355 602</a></p><p><a class="btn g" href="tel:+265994040040">Call +265 994 040 040</a></p></div>
 <form id="f" novalidate><p class="note" id="cn"></p>
 <label for="n">Name *</label><input id="n" required><div class="err" id="en"></div><label for="o">Organization</label><input id="o"><label for="e">Email *</label><input id="e" type="email" required><div class="err" id="ee"></div><label for="p">Phone</label><input id="p" type="tel">
 <label for="sv">Service of interest</label><select id="sv"><option>${svc.map(s=>s[0]).join("</option><option>")}</option><option>${spec.join("</option><option>")}</option></select>

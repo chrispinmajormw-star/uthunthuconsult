@@ -17,7 +17,7 @@ const LG=[
 ["Data Security","We use reasonable technical and organizational measures to protect personal information. No internet transmission or storage system can be guaranteed to be completely secure."],
 ["Data Retention","We keep information only for as long as reasonably necessary for the purpose it was collected for, subject to applicable legal and operational requirements."],
 ["Your Privacy Rights","Depending on applicable law, you may have the right to ask for access to, correction of, or deletion of your personal information. To make a privacy request, contact us using the details below."],
-["Contact About Privacy","Uthunthu Consultancy<br>Plot 12/324, Lilongwe, Malawi<br><a href=\"tel:+265888355602\">+265 888 355 602</a><br><a href=\"tel:+265994040040\">+265 994 040 040</a><br>You can also use our <a href=\"#/contact\">contact form</a>."]]],
+["Contact About Privacy","Uthunthu Consultancy<br>Area 43/692, Capital City, Lilongwe<br><a href=\"tel:+265888355602\">+265 888 355 602</a><br><a href=\"tel:+265994040040\">+265 994 040 040</a><br>You can also use our <a href=\"#/contact\">contact form</a>."]]],
 ["cookies","Cookies Policy",[
 ["What Are Cookies?","Cookies are small files stored on your device that help websites remember your preferences and support certain features."],
 ["How We May Use Cookies",["Essential: support necessary functionality and security. This website does not set cookies for visitors. Staff sign-in to the admin area stores a session in the browser's storage, for administrators only.","Preference: remember settings or choices. Not currently used.","Analytics: help understand website usage. Not currently used.","Marketing: support advertising or measurement. Not currently used."]],

@@ -94,3 +94,4 @@ footer .fb a{color:#e8e8f8;text-decoration:none}footer .fb a:hover{text-decorati
 .lgs{padding:56px 0 32px;border-bottom:1px solid var(--ln);scroll-margin-top:70px}.lgs:last-child{border-bottom:0}
 .lgs h3.sub{font-size:1.1rem;margin:1.8em 0 .4em;scroll-margin-top:150px}.lgs p,.lgs ul{max-width:760px}.lgs li{margin-bottom:.5em}
 .bt{display:inline-block;margin-top:20px;font-weight:700;text-decoration:none}
+footer a{text-decoration:none}footer a:hover{color:#fff}
