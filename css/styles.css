@@ -95,3 +95,8 @@ footer .fb a{color:#e8e8f8;text-decoration:none}footer .fb a:hover{text-decorati
 .lgs h3.sub{font-size:1.1rem;margin:1.8em 0 .4em;scroll-margin-top:150px}.lgs p,.lgs ul{max-width:760px}.lgs li{margin-bottom:.5em}
 .bt{display:inline-block;margin-top:20px;font-weight:700;text-decoration:none}
 footer a{text-decoration:none}footer a:hover{color:#fff}
+.stats{background:radial-gradient(700px 400px at 90% 0,rgba(47,179,97,.3),transparent 60%),linear-gradient(160deg,#1e1b5c,#37338a);color:#fff}
+.stats h2{color:#fff;margin-bottom:1.2em}.stats .eyebrow{color:#9be7b9}
+.st{border-left:3px solid var(--gr);padding:4px 0 4px 20px}
+.st b{display:block;font:800 clamp(2.6rem,5vw,3.8rem)/1 'Plus Jakarta Sans',Inter,sans-serif;letter-spacing:-.03em;color:#fff}
+.st span{display:block;margin-top:10px;color:#d8d8f2;font-size:.98rem;line-height:1.5}
