@@ -19,7 +19,7 @@ const gal=[
 ["Staff Retreats and Retirement Preparation","Retreats","retreats.jpg"]
 ];
 // Photos can be .jpg, .jpeg, .png, .webp or .svg: the site tries each type, so only the name before the dot must match.
-const EXT=["jpg","jpeg","png","webp","svg","JPG","PNG","JPEG"];
+const EXT=["svg","jpg","png","webp","jpeg"]; // the first type is tried first; put your main photo type first to avoid 404 messages
 function tryNext(img){const i=+img.dataset.e+1;if(i<EXT.length){img.dataset.e=i;img.src=IMG+img.dataset.b+"."+EXT[i]}else img.parentNode.classList.add("no")}
 const cats=["All",...new Set(gal.map(g=>g[0]))];
 function lightbox(i,src){const g=gal[i];let o=$("lb");
