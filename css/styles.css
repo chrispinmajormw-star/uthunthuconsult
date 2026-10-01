@@ -112,3 +112,7 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 .soc a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;color:#fff;transition:.2s}
 .soc a:hover{background:var(--gr);color:#0c2a17;transform:translateY(-2px)}
 .soc svg{width:20px;height:20px;fill:currentColor}
+.fb{justify-content:space-between}
+.fl{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center}
+.fb .soc{margin:0;justify-content:flex-end}
+@media(max-width:899px){.fb{flex-direction:column;align-items:flex-start;gap:18px}}
