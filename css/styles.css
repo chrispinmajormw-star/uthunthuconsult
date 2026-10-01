@@ -104,3 +104,6 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 .tm img,.tm .ph0{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;margin-bottom:16px;display:block}
 .ph0{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--in),var(--in2));color:#fff;font:800 4rem 'Plus Jakarta Sans',Inter,sans-serif}
 .tm .eyebrow{letter-spacing:.06em;margin:6px 0 10px}
+.tl .fd{margin-top:48px}
+.fd .ph0{width:260px;height:320px;aspect-ratio:auto;flex:none;border-radius:var(--r);margin:0}
+.fp{flex:none}
