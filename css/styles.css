@@ -107,3 +107,8 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 .tl .fd{margin-top:48px}
 .fd .ph0{width:260px;height:320px;aspect-ratio:auto;flex:none;border-radius:var(--r);margin:0}
 .fp{flex:none}
+.gal.wk .ph{grid-row:auto!important;grid-column:auto!important}
+.soc{display:flex;justify-content:center;gap:12px;margin-top:36px}
+.soc a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;color:#fff;transition:.2s}
+.soc a:hover{background:var(--gr);color:#0c2a17;transform:translateY(-2px)}
+.soc svg{width:20px;height:20px;fill:currentColor}
