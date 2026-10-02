@@ -11,7 +11,6 @@ const gal=[
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-2.jpg"],
 ["Skills Development","Compassion Malawi youth skills development and mindset change training","compassion-youth-training.jpg"],
 ["Youth conference at Crossroads Hotel","Youth Conference","faith-leaders-2.jpg"],
-["Faith Leaders' Empowerment","World Vision National Prayer Day meeting","national-prayer-day.jpg"],
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
 ["Religious Leaders Forum","Religion","religious-leaders-forum.svg"],
