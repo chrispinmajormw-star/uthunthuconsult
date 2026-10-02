@@ -8,7 +8,6 @@ const gal=[
 ["Leadership Training","Uthunthu Leadership Training - Advanced Diploma in Leadership and Management","leadership-diploma.jpg"],
 ["Economic Empowerment","Economic Empowerment sessions","economic-empowerment.jpg"],
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-1.jpg"],
-["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-2.jpg"],
 ["Skills Development","Compassion Malawi youth skills development and mindset change training","compassion-youth-training.jpg"],
 ["Youth conference at Crossroads Hotel","Youth Conference","faith-leaders-2.jpg"],
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
