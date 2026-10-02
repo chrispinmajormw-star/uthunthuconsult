@@ -14,7 +14,7 @@ const gal=[
 ["Faith Leaders' Empowerment","World Vision faith leaders' empowerment sessions","faith-leaders-2.jpg"],
 ["Faith Leaders' Empowerment","World Vision National Prayer Day meeting","national-prayer-day.jpg"],
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
-["Governance and Capacity Building","World Vision Lilongwe Team Capacity Building training","wv-lilongwe-capacity.jpg"],
+["Governance and Capacity Building","World Vision Capacity Building training","wv-lilongwe-capacity.jpg"],
 ["Staff Retreats and Retirement Preparation","Retrenchment and Retirement preparation with World Vision staff","retirement-preparation.jpg"],
 ["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"]
 ];
