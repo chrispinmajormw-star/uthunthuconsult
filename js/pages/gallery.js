@@ -16,7 +16,7 @@ const gal=[
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
 ["Governance and Capacity Building","World Vision Lilongwe Team Capacity Building training","wv-lilongwe-capacity.jpg"],
 ["Staff Retreats and Retirement Preparation","Retrenchment and Retirement preparation with World Vision staff","retirement-preparation.jpg"],
-["Staff Retreats and Retirement Preparation","Retreats","retreats.jpg"]
+["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"]
 ];
 // Photos can be .jpg, .jpeg, .png, .webp or .svg: the site tries each type, so only the name before the dot must match.
 const EXT=["svg","jpg","png","webp","jpeg"]; // the first type is tried first; put your main photo type first to avoid 404 messages
