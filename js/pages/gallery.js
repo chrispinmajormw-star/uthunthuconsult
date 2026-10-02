@@ -17,7 +17,6 @@ const gal=[
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
 ["Religious Leaders Forum","Religion","religious-leaders-forum.svg"],
 ["Governance and Capacity Building","World Vision Capacity Building training","wv-lilongwe-capacity.jpg"],
-["Staff Retreats and Retirement Preparation","Retrenchment and Retirement preparation with World Vision staff","retirement-preparation.jpg"],
 ["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"]
 ];
 // Photos can be .jpg, .jpeg, .png, .webp or .svg: the site tries each type, so only the name before the dot must match.
