@@ -10,6 +10,7 @@ const gal=[
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-1.jpg"],
 ["Skills Development","Compassion Malawi youth skills development and mindset change training","compassion-youth-training.jpg"],
 ["Youth conference at Crossroads Hotel","Youth Conference","faith-leaders-2.jpg"],
+["Freedom through Skills","Prisons mentoring & Skills development Program","freedom.svg"],
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
 ["MRA Admistration Department","Capacity building","mra.svg"],
