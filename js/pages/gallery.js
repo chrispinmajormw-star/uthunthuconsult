@@ -13,6 +13,7 @@ const gal=[
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
 ["MRA Admistration Department","Capacity building","mra.svg"],
+["Baylor Foundation Malawi","Capacity building","baylor.svg"],
 ["Religious Leaders Forum","Religion","religious-leaders-forum.svg"],
 ["Governance and Capacity Building","World Vision Capacity Building training","wv-lilongwe-capacity.jpg"],
 ["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"]
