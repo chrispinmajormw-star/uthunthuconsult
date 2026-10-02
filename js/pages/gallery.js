@@ -10,7 +10,7 @@ const gal=[
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-1.jpg"],
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-2.jpg"],
 ["Skills Development","Compassion Malawi youth skills development and mindset change training","compassion-youth-training.jpg"],
-["Conference at Crossroads Hotel","World Vision faith leaders' empowerment sessions","faith-leaders-2.jpg"],
+["Youth conference at Crossroads Hotel","Youth Conference","faith-leaders-2.jpg"],
 ["Faith Leaders' Empowerment","World Vision National Prayer Day meeting","national-prayer-day.jpg"],
 ["Team Building session with Operation Smile","Team building","governance.jpg"],
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
