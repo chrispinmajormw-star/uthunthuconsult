@@ -118,3 +118,10 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 @media(max-width:899px){.fb{flex-direction:column;align-items:flex-start;gap:18px}}
 [hidden]{display:none!important}
 .sch{padding-left:20px;margin:.3em 0 1em}.sch li{margin-bottom:.35em}.sh{margin:1.1em 0 .2em;font-size:1rem}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero:has(.hg){padding:96px 0}
+.hg h1{font-size:clamp(2.2rem,4.2vw,3.6rem)}
+.hm img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);display:block}
+.hg.solo{grid-template-columns:1fr;text-align:center}
+.hg.solo .ht h1,.hg.solo .ht p{margin-left:auto;margin-right:auto}
+@media(max-width:900px){.hg{grid-template-columns:1fr;gap:36px}.hero:has(.hg){padding:72px 0}}
