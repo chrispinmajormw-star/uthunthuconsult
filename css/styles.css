@@ -160,3 +160,8 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 /* keep the full-width photo to roughly the rest of the first screen; heads stay in view */
 .hm img{height:clamp(280px,42vh,560px);object-position:center 12%}
 .hm img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 5%);mask-image:linear-gradient(to bottom,transparent 0,#000 5%);object-position:center 4%}
+/* photo sits right under the buttons */
+.hero:has(.hg){min-height:0}
+.hm{margin-top:0;padding-top:0}
+.hg .ht{padding-bottom:0}
+.hm img{height:clamp(300px,48vh,600px)}
