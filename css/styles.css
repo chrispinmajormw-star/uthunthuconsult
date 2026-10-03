@@ -154,3 +154,9 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 .hg h1{font-size:clamp(2.1rem,4.2vw,3.5rem);margin-bottom:.4em}
 .hg .ht p{font-size:1.12rem;margin-bottom:1.4em}
 .hm{margin-top:12px;min-height:300px}
+/* Hero v5: photo stretches across the full width of the page */
+.hm{flex:none;min-height:0;margin-top:auto;padding-top:12px}
+.hm img{position:static;display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:center bottom;filter:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%)}
+/* keep the full-width photo to roughly the rest of the first screen; heads stay in view */
+.hm img{height:clamp(280px,42vh,560px);object-position:center 12%}
+.hm img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 5%);mask-image:linear-gradient(to bottom,transparent 0,#000 5%);object-position:center 4%}
