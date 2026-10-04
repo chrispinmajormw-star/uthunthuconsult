@@ -9,8 +9,8 @@ P.about=()=>`<section><div class="w">
   <div class="card vm-card" style="border-top:4px solid var(--in)">
     <div class="vm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
     <span class="eyebrow">Our Vision</span>
-    <h3>A Holistically Transformed Society</h3>
-    <p>A holistically developed and transformed individual and organization capable of sustainable growth, ethical leadership, and continuous innovation.</p>
+    <h3>Our Vision</h3>
+    <p>A holistically developed and transformed individual and organisation.</p>
   </div>
   <div class="card vm-card" style="border-top:4px solid var(--gd)">
     <div class="vm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>

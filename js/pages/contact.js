@@ -3,10 +3,11 @@ P.contact=()=>`<section><div class="w"><h1>Request a Consultation</h1><div class
 <h3>Direct Inquiries</h3>
 <p>Speak directly with our team to discuss your institution's specific requirements.</p>
 <p><strong>Office Location:</strong><br>Area 43/692, Capital City, Lilongwe, Malawi</p>
+<p><strong>Email Address:</strong><br><a href="mailto:casmkanda@yahoo.com">casmkanda@yahoo.com</a></p>
 <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px">
-<a class="btn g" href="tel:+265888355602">Call +265 888 355 602</a>
 <a class="btn g" href="tel:+265994040040">Call +265 994 040 040</a>
-<a class="btn o" href="https://wa.me/265888355602?text=Hello%20Uthunthu%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" style="text-align:center">Chat on WhatsApp &rarr;</a>
+<a class="btn g" href="tel:+265888355602">Call +265 888 355 602</a>
+<a class="btn o" href="https://wa.me/265994040040?text=Hello%20Uthunthu%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" style="text-align:center">Chat on WhatsApp &rarr;</a>
 </div>
 </div>
 </div>
