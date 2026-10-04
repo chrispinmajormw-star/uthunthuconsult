@@ -1297,10 +1297,14 @@ footer strong {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2.2fr 1fr 1.2fr 1.6fr;
+  grid-template-columns: 2fr 1fr 1.5fr;
   gap: 44px;
   margin-bottom: 48px;
 }
+
+/* Footer logo without text */
+.footer-logo-only { gap: 0; }
+.footer-logo-only::before { display: none; }
 
 .footer-col-brand .flg {
   height: 48px;
@@ -1618,31 +1622,12 @@ footer strong {
     grid-template-columns: 1fr 1fr;
     gap: 36px;
   }
-  .newsletter-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-  }
-  .newsletter-form {
-    width: 100%;
-  }
-  .newsletter-form input {
-    flex: 1;
-    min-width: 140px;
-  }
 }
 
 @media (max-width: 600px) {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-  .newsletter-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .newsletter-btn {
-    justify-content: center;
   }
   .fb-top-row, .fb-bottom-row {
     flex-direction: column;
