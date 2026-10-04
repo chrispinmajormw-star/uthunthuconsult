@@ -351,7 +351,7 @@ nav {
               radial-gradient(700px 500px at 0% 110%, rgba(91, 86, 214, 0.55), transparent 60%),
               linear-gradient(160deg, #18154e, #312d7d 70%);
   color: #fff;
-  padding: 84px 0 68px;
+  padding: 84px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -364,6 +364,7 @@ nav {
   background-size: 24px 24px;
   mask-image: linear-gradient(to bottom, #000, transparent 90%);
   -webkit-mask-image: linear-gradient(to bottom, #000, transparent 90%);
+  pointer-events: none;
 }
 
 .hero .w { position: relative; max-width: 1240px; }
@@ -398,26 +399,28 @@ nav {
 
 .hg .ht h1, .hg .ht p { margin-left: auto; margin-right: auto; }
 
-/* Increased Hero Image Container */
+/* Full-Width Edge-to-Edge Hero Image */
 .hm {
-  margin-top: 44px;
+  margin-top: 50px;
   width: 100%;
-  max-width: 1100px;
-  border-radius: var(--r);
-  overflow: visible;
+  max-width: 100%;
+  border-radius: 0;
+  overflow: hidden;
   position: relative;
+  line-height: 0;
 }
 
 .hm img {
   width: 100%;
   height: auto;
-  min-height: 380px;
-  max-height: 580px;
+  min-height: 420px;
+  max-height: 640px;
   object-fit: cover;
-  border-radius: var(--r);
+  object-position: center top;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
   display: block;
-  box-shadow: 0 28px 60px -15px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .hero-float-badge {
@@ -434,11 +437,12 @@ nav {
   font-size: 0.92rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   animation: badge-bob 4s ease-in-out infinite alternate;
+  line-height: 1.5;
 }
 
-.badge-1 { top: -16px; left: 24px; animation-delay: 0s; border-color: rgba(47, 179, 97, 0.6); color: #9be7b9; }
-.badge-2 { bottom: 28px; left: -14px; animation-delay: 1.5s; border-color: rgba(157, 152, 255, 0.6); }
-.badge-3 { top: 32%; right: -14px; animation-delay: 0.8s; border-color: rgba(47, 179, 97, 0.6); color: #9be7b9; }
+.badge-1 { top: 24px; left: 4%; animation-delay: 0s; border-color: rgba(47, 179, 97, 0.6); color: #9be7b9; }
+.badge-2 { bottom: 28px; left: 4%; animation-delay: 1.5s; border-color: rgba(157, 152, 255, 0.6); }
+.badge-3 { top: 32%; right: 4%; animation-delay: 0.8s; border-color: rgba(47, 179, 97, 0.6); color: #9be7b9; }
 
 @keyframes badge-bob {
   0% { transform: translateY(0); }
@@ -447,7 +451,8 @@ nav {
 
 @media (max-width: 768px) {
   .hero-float-badge { display: none; }
-  .hm img { min-height: 240px; max-height: 360px; }
+  .hm { margin-top: 36px; }
+  .hm img { min-height: 240px; max-height: 380px; }
 }
 
 /* Cards & Grid */

@@ -21,12 +21,12 @@ P.home=()=>`<div class="hero">
         <a class="btn o" href="#/bsd">Discover the BSD Model</a>
       </div>
     </div>
-    <div class="hm">
-      <div class="hero-float-badge badge-1">✦ 12+ Years of Impact</div>
-      <div class="hero-float-badge badge-2">★ 5,000+ Leaders Trained</div>
-      <div class="hero-float-badge badge-3">✔ 100% Contextualized</div>
-      <img src="images/gallery/front.svg" data-e="0" alt="Team members collaborating in a workshop" onerror="this.src='images/gallery/front.jpg'">
-    </div>
+  </div>
+  <div class="hm">
+    <div class="hero-float-badge badge-1">✦ 12+ Years of Impact</div>
+    <div class="hero-float-badge badge-2">★ 5,000+ Leaders Trained</div>
+    <div class="hero-float-badge badge-3">✔ 100% Contextualized</div>
+    <img src="images/gallery/front.svg" data-e="0" alt="Team members collaborating in a workshop" onerror="this.src='images/gallery/front.jpg'">
   </div>
 </div>
 
