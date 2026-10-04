@@ -23,8 +23,40 @@ const gal=[
 const EXT=["svg","jpg","png","webp","jpeg"]; // the first type is tried first; put your main photo type first to avoid 404 messages
 function tryNext(img){const i=+img.dataset.e+1;if(i<EXT.length){img.dataset.e=i;img.src=IMG+img.dataset.b+"."+EXT[i]}else img.parentNode.classList.add("no")}
 const cats=["All",...new Set(gal.map(g=>g[0]))];
-function lightbox(i,src){const g=gal[i];let o=$("lb");
-if(!o){o=document.createElement("div");o.id="lb";o.setAttribute("role","dialog");o.setAttribute("aria-modal","true");document.body.appendChild(o)}
-o.innerHTML=`<button id="lx" aria-label="Close">&times;</button><img src="${src}" alt="${esc(g[1])}"><p>${esc(g[1])}</p>`;
-o.className="on";$("lx").focus();o.onclick=e=>{if(e.target.tagName!=="IMG")o.className=""}}
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("lb"))$("lb").className=""});
+let currentLbIndex=0;
+function showLightboxIndex(idx){
+  if(idx<0)idx=gal.length-1;
+  if(idx>=gal.length)idx=0;
+  currentLbIndex=idx;
+  const g=gal[idx];
+  let o=$("lb");
+  if(!o){
+    o=document.createElement("div");o.id="lb";o.setAttribute("role","dialog");o.setAttribute("aria-modal","true");
+    document.body.appendChild(o);
+  }
+  const imgSrc=IMG+g[2].replace(/\.\w+$/,"")+"."+EXT[0];
+  o.innerHTML=`<button id="lx" aria-label="Close dialog">&times;</button>
+  <button id="lprev" class="lb-nav" aria-label="Previous photo">&#10094;</button>
+  <div class="lb-content">
+    <img src="${imgSrc}" data-b="${g[2].replace(/\.\w+$/,"")}" data-e="0" alt="${esc(g[1])}" onerror="tryNext(this)">
+    <div class="lb-caption">
+      <span class="eyebrow">${esc(g[0])}</span>
+      <p>${esc(g[1])}</p>
+      <span class="lb-counter">${currentLbIndex+1} of ${gal.length}</span>
+    </div>
+  </div>
+  <button id="lnext" class="lb-nav" aria-label="Next photo">&#10095;</button>`;
+  o.className="on";
+  $("lx").onclick=()=>o.className="";
+  $("lprev").onclick=e=>{e.stopPropagation();showLightboxIndex(currentLbIndex-1)};
+  $("lnext").onclick=e=>{e.stopPropagation();showLightboxIndex(currentLbIndex+1)};
+  o.onclick=e=>{if(e.target.id==="lb")o.className=""};
+}
+function lightbox(i){showLightboxIndex(i)}
+document.addEventListener("keydown",e=>{
+  const o=$("lb");
+  if(!o||!o.classList.contains("on"))return;
+  if(e.key==="Escape")o.className="";
+  if(e.key==="ArrowLeft")showLightboxIndex(currentLbIndex-1);
+  if(e.key==="ArrowRight")showLightboxIndex(currentLbIndex+1);
+});
