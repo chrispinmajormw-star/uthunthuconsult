@@ -86,6 +86,36 @@ if(themeBtn){
   };
 }
 
+// Toast Notification helper
+window.showToast=(msg,duration=3000)=>{
+  const t=$("toast");
+  if(!t)return;
+  t.textContent=msg;
+  t.classList.add("show");
+  clearTimeout(t._tid);
+  t._tid=setTimeout(()=>t.classList.remove("show"),duration);
+};
+
+// Scroll listener: progress bar & back-to-top
+window.addEventListener("scroll",()=>{
+  const h=document.documentElement,b=document.body;
+  const st="scrollTop"in h?h.scrollTop:b.scrollTop;
+  const sh="scrollHeight"in h?h.scrollHeight:b.scrollHeight;
+  const ch=h.clientHeight||window.innerHeight;
+  const pct=(st/(sh-ch))*100;
+  
+  const pb=$("scroll-progress");
+  if(pb)pb.style.width=Math.min(100,Math.max(0,pct))+"%";
+  
+  const btt=$("back-to-top");
+  if(btt)btt.classList.toggle("show",st>350);
+},{passive:true});
+
+const btt=$("back-to-top");
+if(btt){
+  btt.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+}
+
 addEventListener("hashchange",route);
 route();
 
