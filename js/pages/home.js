@@ -1,5 +1,5 @@
 // CLIENT LOGOS: files live in images/. To add one, put the file in images/ and add a line: ["file-name-without-.svg","Name"]
-const CL=[["worldvision","World Vision"],["global","Global Fund"],["compassion","Compassion Malawi"],["luanar","LUANAR"],["mzuni","MZUNI"],["must","MUST"],["plu","PLU"],["magu","MAGU"],["unima","University of Malawi"],["ccap","CCAP"],["cic","CIC"],["mbs","MBC"],["mibawa","Mibawa"],["zodiac","Zodiak"]];
+const CL=[["worldvision","World Vision"],["global","Global Fund"],["compassion","Compassion Malawi"],["luanar","LUANAR"],["mzuni","MZUNI"],["must","MUST"],["plu","PLU"],["magu","MAGU"],["unima","University of Malawi"],["ccap","CCAP"],["cic","CIC"],["mbc","MBC"],["mibawa","Mibawa"],["zodiac","Zodiak"]];
 // Hero photo: put it in images/gallery/ named front (jpg, jpeg, png, webp, jfif or svg); the site finds the type.
 const HX=["svg","png","webp","jpg","jpeg","jfif"];
 // Removes empty (transparent) space above the people so the photo sits right under the buttons, whatever the image.
