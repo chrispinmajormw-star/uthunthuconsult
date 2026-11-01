@@ -3,6 +3,10 @@ const S=" | Uthunthu Consultancy";
 const T={"":["home","Uthunthu Consultancy | Building Complete People"],about:["about","About Us"+S],bsd:["bsd","Our Approach"+S],services:["services","Services"+S],impact:["impact","Our Impact"+S],work:["work","Our Work"+S],contact:["contact","Contact Us"+S],admin:["admin","Admin"+S],legal:["legal","Legal & Privacy"+S]};
 
 function route(){
+  if(window._heroRotatorTimer && location.hash && location.hash !== "#/" && location.hash !== "#"){
+    clearInterval(window._heroRotatorTimer);
+    window._heroRotatorTimer = null;
+  }
   const raw=location.hash.replace(/^#\/?/,"");
   const [k,sub]=raw.split("/");
   if(k==="contact"&&sub){

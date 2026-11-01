@@ -11,6 +11,13 @@ const testimonials=[
 ];
 
 P.home=()=>`<div class="hero">
+  <!-- Dynamic Full-Cover Background with Random Faded Photos -->
+  <div class="hero-photo-backdrop" aria-hidden="true">
+    <div class="hero-photo-layer active" id="hero-layer-a"></div>
+    <div class="hero-photo-layer" id="hero-layer-b"></div>
+  </div>
+  <div class="hero-gradient-overlay" aria-hidden="true"></div>
+
   <div class="w hg">
     <div class="ht">
       <div class="hero-badge-pill"><span>✦ Founded in 2014</span> • <span>Malawi's Leading Transformation Firm</span></div>
@@ -21,13 +28,18 @@ P.home=()=>`<div class="hero">
         <a class="btn g" href="#/services">Explore Our Services</a>
         <a class="btn o" href="#/bsd">Discover the BSD Model</a>
       </div>
+
+      <div class="hero-photo-caption" id="hero-photo-caption" title="Real Uthunthu workshop in session">
+        <span class="pulse-dot"></span>
+        <span id="hero-photo-title">Holistic Capacity &amp; Leadership Workshop</span>
+      </div>
+
+      <div class="hero-badges-strip">
+        <div class="hero-float-badge badge-1">✦ 12+ Years of Impact</div>
+        <div class="hero-float-badge badge-2">★ 5,000+ Leaders Trained</div>
+        <div class="hero-float-badge badge-3">✔ 100% Contextualized</div>
+      </div>
     </div>
-  </div>
-  <div class="hm">
-    <div class="hero-float-badge badge-1">✦ 12+ Years of Impact</div>
-    <div class="hero-float-badge badge-2">★ 5,000+ Leaders Trained</div>
-    <div class="hero-float-badge badge-3">✔ 100% Contextualized</div>
-    <img src="images/gallery/front.svg" data-e="0" alt="Team members collaborating in a workshop" onerror="this.src='images/gallery/front.jpg'">
   </div>
 </div>
 
@@ -177,6 +189,7 @@ P.home=()=>`<div class="hero">
 ${cta("Ready to Build Complete People and Transform Your Organization?","Whether you are developing leaders, strengthening governance or empowering youth, Uthunthu Consultancy is ready to partner with you.")}`;
 
 AFTER.home=()=>{
+  // Number counter animation for statistics
   const els=document.querySelectorAll(".st b"),fmt=n=>n.toLocaleString("en-US");
   const run=el=>{
     const t=+el.dataset.n;
@@ -189,9 +202,70 @@ AFTER.home=()=>{
     };
     requestAnimationFrame(f);
   };
-  if(!("IntersectionObserver" in window))return;
-  const io=new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting){run(e.target);io.unobserve(e.target);}
-  }),{threshold:0.5});
-  els.forEach(e=>io.observe(e));
+  if("IntersectionObserver" in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{
+      if(e.isIntersecting){run(e.target);io.unobserve(e.target);}
+    }),{threshold:0.5});
+    els.forEach(e=>io.observe(e));
+  }
+
+  // Dynamic Random Faded Photos Hero Rotator
+  (function initHeroRotator(){
+    const layerA = $("hero-layer-a");
+    const layerB = $("hero-layer-b");
+    const captionEl = $("hero-photo-title");
+    if(!layerA || !layerB) return;
+
+    const photos = [
+      { file: "front.svg", title: "Holistic Capacity & Leadership Workshop" },
+      { file: "retreats.svg", title: "Executive Retreat & Strategic Leadership Training" },
+      { file: "luanar-mentoring-1.svg", title: "LUANAR University Mentoring Programme" },
+      { file: "team-building-global-fund.svg", title: "Global Fund / CIC Team Building Facilitation" },
+      { file: "youth-skills-1.svg", title: "Youth Skills Development & Financial Empowerment" },
+      { file: "economic-empowerment.svg", title: "Community Economic Empowerment Sessions" },
+      { file: "governance.svg", title: "Institutional Governance & Leadership" },
+      { file: "luanar-mentoring-2.svg", title: "University Mentoring & Character Transformation" },
+      { file: "faith-leaders-1.svg", title: "Faith Leaders' Empowerment at Crossroads Hotel" }
+    ];
+
+    let currentIdx = 0;
+    let activeLayer = layerA;
+    let inactiveLayer = layerB;
+
+    // Set initial image
+    layerA.style.backgroundImage = "url('images/gallery/" + photos[0].file + "')";
+    layerA.classList.add("active");
+    if(captionEl) captionEl.textContent = photos[0].title;
+
+    if(window._heroRotatorTimer) clearInterval(window._heroRotatorTimer);
+
+    window._heroRotatorTimer = setInterval(() => {
+      // Pick a random photo different from current
+      let nextIdx;
+      do {
+        nextIdx = Math.floor(Math.random() * photos.length);
+      } while (nextIdx === currentIdx && photos.length > 1);
+
+      currentIdx = nextIdx;
+      const nextPhoto = photos[nextIdx];
+
+      // Prepare inactive layer and crossfade
+      inactiveLayer.style.backgroundImage = "url('images/gallery/" + nextPhoto.file + "')";
+      inactiveLayer.classList.add("active");
+      activeLayer.classList.remove("active");
+
+      if(captionEl) {
+        captionEl.style.opacity = "0";
+        setTimeout(() => {
+          captionEl.textContent = nextPhoto.title;
+          captionEl.style.opacity = "1";
+        }, 400);
+      }
+
+      // Swap pointers
+      const temp = activeLayer;
+      activeLayer = inactiveLayer;
+      inactiveLayer = temp;
+    }, 4600);
+  })();
 };
