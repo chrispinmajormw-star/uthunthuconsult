@@ -122,6 +122,58 @@ P.home=()=>`<div class="hero">
   </div>`).join("")}</div>
 </div></section>
 
+<section style="padding-top:0"><div class="w">
+  <div class="card profile-banner-card">
+    <div class="profile-banner-grid">
+      <div class="profile-banner-content">
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px">
+          <span class="eyebrow" style="margin-bottom:0">Institutional Profile</span>
+          <span class="tag" style="background:var(--gd);color:#fff;margin:0">Official Brochure</span>
+          <span class="tag" style="margin:0">PDF &bull; 2.7 MB</span>
+        </div>
+        <h2>Download Our Institutional Profile</h2>
+        <p style="font-size:1.05rem;max-width:640px">Get an in-depth view of Uthunthu Consultancy's mission, the BSD Model (Being, Seeing, Doing), our faculty credentials, core service modules, and proven track record across African institutions.</p>
+        <div class="profile-highlights">
+          <span>&#10004; Holistic Capacity Framework</span>
+          <span>&#10004; Executive &amp; Board Advisory</span>
+          <span>&#10004; Institutional Case Studies</span>
+          <span>&#10004; Facilitator Profiles</span>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <a class="btn g" href="images/gallery/UCProfileV1.0.pdf" download="Uthunthu-Consultancy-Institutional-Profile-V1.0.pdf" style="display:inline-flex;align-items:center;gap:8px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Profile (PDF)
+          </a>
+          <a class="btn o" href="images/gallery/UCProfileV1.0.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            View in Browser
+          </a>
+        </div>
+      </div>
+      <div class="profile-banner-graphic">
+        <div class="profile-doc-preview">
+          <div class="profile-doc-header">
+            <div class="pdf-tag">PDF</div>
+            <span style="font-size:0.8rem;color:var(--mu);font-weight:600">Edition V1.0</span>
+          </div>
+          <div class="profile-doc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <strong style="display:block;font-size:1.05rem;margin-top:12px;color:var(--tx)">Uthunthu Consultancy</strong>
+          <span style="display:block;font-size:0.85rem;color:var(--mu);margin-top:4px">Corporate &amp; Institutional Profile</span>
+          <span class="profile-doc-footer">&#128065; Click above to view or download</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
 ${cta("Ready to Build Complete People and Transform Your Organization?","Whether you are developing leaders, strengthening governance or empowering youth, Uthunthu Consultancy is ready to partner with you.")}`;
 
 AFTER.home=()=>{

@@ -1705,3 +1705,94 @@ footer strong {
   font-size: 1rem;
   flex-shrink: 0;
 }
+
+
+/* ─── Profile Download Banner ───────────────────────── */
+.profile-banner-card {
+  border-top: 4px solid var(--gd);
+  padding: 40px 36px;
+  background: linear-gradient(135deg, var(--sf) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.profile-banner-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.profile-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 18px;
+  font-size: 0.92rem;
+  color: var(--mu);
+  font-weight: 600;
+}
+.profile-highlights span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.profile-banner-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-doc-preview {
+  width: 100%;
+  max-width: 260px;
+  background: var(--bg);
+  border: 1px solid var(--ln);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--sh);
+  text-align: center;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.profile-doc-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sh-lg);
+}
+.profile-doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.pdf-tag {
+  background: #e74c3c;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+.profile-doc-icon svg {
+  width: 58px;
+  height: 58px;
+  color: var(--gd);
+}
+.profile-doc-footer {
+  display: block;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--ln);
+  font-size: 0.78rem;
+  color: var(--mu);
+}
+@media (max-width: 860px) {
+  .profile-banner-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .profile-banner-card {
+    padding: 28px 20px;
+  }
+  .profile-banner-graphic {
+    order: -1;
+  }
+}
