@@ -5,9 +5,9 @@ const logoStrip=()=>{const set=d=>CL.map(c=>`<img${d?' class="d"':''} src="image
 return `<div class="mq" role="group" aria-label="Organizations we have served"><div class="mt">${set(0)}${set(1)}</div></div>`};
 
 const testimonials=[
-  ["\"Uthunthu Consultancy's contextualized BSD model helped our university mentors and student leaders bridge the gap between academic knowledge and practical character-driven leadership.\"", "Dean of Students", "Higher Education Partner", "LUANAR"],
-  ["\"The strategic change and capacity development sessions delivered by Dr. Mkanda and his team energized our staff and aligned our teams around a unified mission.\"", "Country Programs Lead", "International NGO Partner", "World Vision Partner"],
-  ["\"Their unique approach to team dynamics and personal empowerment created measurable improvements in accountability and leadership across departments.\"", "Human Resources Executive", "Financial & Corporate Sector", "Institutional Client"]
+  ["\"Uthunthu Consultancy's contextualized BSD model helped our university mentors and student leaders bridge the gap between academic knowledge and practical character-driven leadership.\"", "Dean of Students", "Higher Education Partner", "LUANAR", "luanar"],
+  ["\"The strategic change and capacity development sessions delivered by Dr. Mkanda and his team energized our staff and aligned our teams around a unified mission.\"", "Country Programs Lead", "International NGO Partner", "World Vision Partner", "worldvision"],
+  ["\"Their unique approach to team dynamics and personal empowerment created measurable improvements in accountability and leadership across departments.\"", "Human Resources Executive", "Financial & Corporate Sector", "Institutional Client", "global"]
 ];
 
 P.home=()=>`<div class="hero">
@@ -16,6 +16,7 @@ P.home=()=>`<div class="hero">
       <div class="hero-badge-pill"><span>✦ Founded in 2014</span> • <span>Malawi's Leading Transformation Firm</span></div>
       <h1>Building Complete People. Transforming Organizations.</h1>
       <p>Empowering individuals and institutions through character development, mindset transformation and practical skills for sustainable growth.</p>
+      <p class="hero-vision"><em>"A holistically developed and transformed individual and organisation."</em></p>
       <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
         <a class="btn g" href="#/services">Explore Our Services</a>
         <a class="btn o" href="#/bsd">Discover the BSD Model</a>
@@ -68,7 +69,10 @@ P.home=()=>`<div class="hero">
     <span class="tag" style="align-self:flex-start;margin-bottom:12px">${s[4]||"Service"}</span>
     <h3>${s[0]}</h3>
     <p>${s[1]}</p>
-    <a href="#/services" style="margin-top:auto;font-weight:700">Learn more &rarr;</a>
+    <div style="margin-top:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-top:16px;border-top:1px solid var(--ln)">
+      <a href="#/services" style="font-weight:700;font-size:0.9rem">Learn more &rarr;</a>
+      <a href="https://wa.me/265994040040?text=Hello%20Uthunthu%2C%20I%27m%20interested%20in%20${encodeURIComponent(s[0])}" target="_blank" rel="noopener" class="btn o" style="font-size:0.8rem;padding:6px 14px;margin-left:auto">WhatsApp</a>
+    </div>
   </div>`).join("")}</div>
   <p style="margin-top:32px"><a class="btn" href="#/services">View All Services</a></p>
 </div></section>
@@ -96,9 +100,9 @@ P.home=()=>`<div class="hero">
   <div class="grid">${testimonials.map(t=>`<div class="card testimonial-card">
     <div class="test-stars">★★★★★</div>
     <p class="test-quote">${t[0]}</p>
-    <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--ln)">
-      <strong>${t[1]}</strong>
-      <div class="note">${t[2]} · ${t[3]}</div>
+    <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--ln);display:flex;align-items:center;gap:14px">
+      <img class="test-logo" src="images/${t[4]}.svg" alt="${t[3]}" style="height:32px;width:auto;opacity:0.75" onerror="this.style.display='none'">
+      <div><strong>${t[1]}</strong><div class="note">${t[2]} · ${t[3]}</div></div>
     </div>
   </div>`).join("")}</div>
 </div></section>

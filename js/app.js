@@ -123,4 +123,10 @@ function reveal(){
   if(matchMedia("(prefers-reduced-motion:reduce)").matches||!("IntersectionObserver" in window))return;
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08});
   document.querySelectorAll("main .card,main section h2,main .panel").forEach(el=>{el.classList.add("rv");io.observe(el)});
+  // BSD triangle draw-on animation
+  const bsdEl=document.querySelector("main .bsd");
+  if(bsdEl){
+    const bsdIo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("bsd-drawn");bsdIo.unobserve(e.target)}}),{threshold:.2});
+    bsdIo.observe(bsdEl);
+  }
 }

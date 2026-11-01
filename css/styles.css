@@ -1661,3 +1661,47 @@ footer strong {
 }
 
 [hidden] { display: none !important; }
+
+
+/* ─── Hero vision quote ───────────────────────────── */
+.hero-vision {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.78;
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+/* ─── Testimonial logo filter (dark mode) ─────────── */
+:root[data-theme="dark"] .test-logo { filter: brightness(0) invert(1); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .test-logo { filter: brightness(0) invert(1); }
+}
+
+/* ─── BSD triangle draw-on animation ─────────────── */
+.bsd svg path {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bsd.bsd-drawn svg path {
+  stroke-dashoffset: 0;
+}
+
+/* ─── Impact stat card tweak ─────────────────────── */
+.why-card b { display: block; }
+
+/* ─── What Happens Next steps ─────────────────────── */
+.step-num {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+}

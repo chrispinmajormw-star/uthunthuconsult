@@ -10,16 +10,35 @@ P.contact=()=>`<section><div class="w"><h1>Request a Consultation</h1><div class
 <a class="btn o" href="https://wa.me/265994040040?text=Hello%20Uthunthu%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" style="text-align:center">Chat on WhatsApp &rarr;</a>
 </div>
 </div>
+
+<div class="card" style="border-top:4px solid var(--in)">
+<h3>What Happens Next?</h3>
+<div style="display:flex;flex-direction:column;gap:18px;margin-top:12px">
+  <div style="display:flex;gap:14px;align-items:flex-start">
+    <div class="step-num" style="background:var(--in)">1</div>
+    <div><strong>We Receive Your Request</strong><p class="note" style="margin:4px 0 0">Our team reviews every consultation request, usually within a few hours.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start">
+    <div class="step-num" style="background:var(--gd)">2</div>
+    <div><strong>We Call You Within 24–48 Hours</strong><p class="note" style="margin:4px 0 0">Dr. Mkanda or a senior consultant will reach out to understand your goals in detail.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start">
+    <div class="step-num" style="background:var(--gr)">3</div>
+    <div><strong>We Design Your Programme</strong><p class="note" style="margin:4px 0 0">A bespoke proposal is crafted around your institutional context, team size and goals.</p></div>
+  </div>
 </div>
+</div>
+</div>
+
 <form id="f" novalidate>
 <p class="note" id="cn"></p>
 <div style="display:none" aria-hidden="true"><input id="hp" tabindex="-1" autocomplete="off"></div>
-<label for="n">Full Name *</label><input id="n" required placeholder="e.g. Chimwemwe Phiri"><div class="err" id="en"></div>
+<label for="n">Full Name *</label><input id="n" required placeholder="e.g. Chimwemwe Phiri"><div class="err" id="en" role="alert"></div>
 <label for="o">Organization / Institution</label><input id="o" placeholder="e.g. NGO, University, Corporate">
-<label for="e">Email Address *</label><input id="e" type="email" required placeholder="name@organization.com"><div class="err" id="ee"></div>
+<label for="e">Email Address *</label><input id="e" type="email" required placeholder="name@organization.com"><div class="err" id="ee" role="alert"></div>
 <label for="p">Phone / WhatsApp Number</label><input id="p" type="tel" placeholder="+265 888 000 000">
 <label for="sv">Service of Interest</label><select id="sv"><option value="">-- Select a Service / Topic --</option><option>${svc.map(s=>s[0]).join("</option><option>")}</option><option>${spec.join("</option><option>")}</option></select>
-<label for="m">Your Message or Program Goals *</label><textarea id="m" rows="4" required placeholder="Tell us about your team size, dates, and transformation goals..."></textarea><div class="err" id="em"></div>
+<label for="m">Your Message or Program Goals *</label><textarea id="m" rows="4" required placeholder="Tell us about your team size, dates, and transformation goals..."></textarea><div class="err" id="em" role="alert"></div>
 <p style="margin-top:20px"><button class="btn" id="sbtn" type="submit">Submit Request</button></p>
 <div id="res" role="status"></div>
 </form></div></div></section>`;
