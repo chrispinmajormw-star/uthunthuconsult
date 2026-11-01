@@ -19,20 +19,20 @@ function makeIcsDataUrl(e){
 async function loadEvents(){
   const el=$("ev");
   if(!el)return;
-  if(!sb){
-    el.innerHTML='<div class="card" style="max-width:760px"><p class="note">Events will appear once Supabase is connected.</p></div>';
-    return;
-  }
-  el.innerHTML=`<div class="card skeleton-card" style="max-width:760px;margin:14px 0"><div class="skeleton-line" style="width:40%;height:20px;margin-bottom:12px"></div><div class="skeleton-line" style="width:75%;height:28px;margin-bottom:14px"></div><div class="skeleton-line" style="width:100%;height:16px;margin-bottom:8px"></div><div class="skeleton-line" style="width:60%;height:16px"></div></div>`;
-  
-  const {data,error}=await sb.from("events").select("*").eq("published",true).gte("event_date",new Date(Date.now()-864e5).toISOString()).order("event_date");
-  
-  if(error){
-    el.innerHTML='<p class="err">Could not load events.</p>';
-    return;
-  }
-  if(!data||!data.length){
-    el.innerHTML='<div class="card" style="max-width:760px;text-align:center;padding:40px"><span class="eyebrow">Stay Tuned</span><h3>No Upcoming Public Events Scheduled</h3><p class="note">Check back soon for upcoming executive retreats, workshops, and youth leadership symposiums.</p><p><a class="btn" href="#/contact">Request an In-House Program</a></p></div>';
+  if(!sb || !data || !data.length){
+    el.innerHTML=`<div class="card" style="max-width:780px;padding:36px 30px;border-top:4px solid var(--gd)">
+      <span class="eyebrow">Public Calendar</span>
+      <h3 style="margin:6px 0 10px;font-size:1.45rem">Upcoming Public Symposia &amp; Executive Retreats</h3>
+      <p style="font-size:1.02rem;max-width:640px">We are currently curating our upcoming season of public masterclasses, university student symposia, and executive leadership retreats across Lilongwe and Blantyre.</p>
+      <div style="background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:18px 20px;margin:20px 0">
+        <strong style="color:var(--tx)">Looking to Host a Session Sooner?</strong>
+        <p class="note" style="margin:4px 0 0">All our flagship programmes — from Strategic Change to Team Building — can be scheduled on-demand as private in-house retreats or board sessions for your institution.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn g" href="#/contact">Request In-House Training</a>
+        <a class="btn o" href="https://wa.me/265994040040?text=Hello%20Uthunthu%2C%20I%20would%20like%20to%20inquire%20about%20scheduling%20an%20in-house%20workshop." target="_blank" rel="noopener">Inquire via WhatsApp &rarr;</a>
+      </div>
+    </div>`;
     return;
   }
   

@@ -1897,3 +1897,9 @@ footer strong {
     order: -1;
   }
 }
+
+
+/* ─── Global Anchor Scroll Offset for Sticky Navigation ─── */
+[id] {
+  scroll-margin-top: 88px;
+}

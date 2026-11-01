@@ -33,6 +33,18 @@ P.about=()=>`<section><div class="w">
     <p>${x[1]}</p>
   </div>`).join("")}</div>
 
+  <div class="card" style="border-top:4px solid var(--gd);margin-top:40px;padding:28px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;background:linear-gradient(135deg,var(--sf) 0%,var(--bg) 100%)">
+    <div>
+      <span class="eyebrow" style="margin-bottom:4px">Corporate Documentation</span>
+      <h3 style="margin:4px 0 6px">Download Our Institutional Profile &amp; Credentials</h3>
+      <p class="note" style="margin:0;max-width:620px">Access our official corporate brochure containing full details on Dr. Caswel Mkanda, our faculty, the BSD framework, and client track record.</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn g" href="images/gallery/UCProfileV1.0.pdf" download="Uthunthu-Consultancy-Institutional-Profile-V1.0.pdf">Download Profile (PDF)</a>
+      <a class="btn o" href="images/gallery/UCProfileV1.0.pdf" target="_blank" rel="noopener">View in Browser</a>
+    </div>
+  </div>
+
   <span class="eyebrow" style="margin-top:56px;display:block">Leadership &amp; Faculty</span>
   <h2>Meet Our Facilitators &amp; Consultants</h2>
   
@@ -59,7 +71,7 @@ P.about=()=>`<section><div class="w">
   <div class="tl">${[
     ["Fishani","fishani","F","Facilitator &amp; Public Speaking Specialist","Fishani leads executive coaching in public speaking, executive presence, and team-building facilitation. In addition to moderating high-level national corporate panels, she specializes in organizational communication and management training."],
     ["Dr Sunguma","sunguma","S","Capacity Development Specialist","Dr. Sunguma is a distinguished capacity development strategist with extensive academic and corporate training experience. His dynamic, charismatic facilitation style brings deep practical relevance to executive management retreats and team cohesion sessions."]
-  ].map(m=>`<div class="card" style="margin-top:20px"><div class="fd"><img class="fp" src="images/${m[1]}.jpg" alt="${m[0]}" data-l="${m[2]}" onerror="noPh(this)"><div><span class="eyebrow">${m[3]}</span><h3>${m[0]}</h3><p>${m[4]}</p></div></div></div>`).join("")}</div>
+  ].map(m=>`<div class="card" style="margin-top:20px"><div class="fd"><img class="fp" src="images/${m[1]}.jpg" alt="${m[0]}" data-l="${m[2]}" onerror="noPh(this)"><div><span class="eyebrow">${m[3]}</span><h3>${m[0]}</h3><p>${m[4]}</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a class="btn o" style="font-size:0.85rem;padding:6px 14px" href="#/contact/${encodeURIComponent(m[0])}">Book ${m[0]}</a><a class="btn o" style="font-size:0.85rem;padding:6px 14px" href="https://wa.me/265994040040?text=Hello%20Uthunthu%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20working%20with%20${encodeURIComponent(m[0])}" target="_blank" rel="noopener">WhatsApp</a></div></div></div></div>`).join("")}</div>
 </div></section>
 
 ${cta("Ready to Partner with Our Team?","Discuss your organization's leadership development, retreat, or capacity building needs with us.")}`;

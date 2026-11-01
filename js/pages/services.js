@@ -24,6 +24,18 @@ P.services=()=>`<section><div class="w"><h1>Our Services</h1>${svc.map((s,i)=>`<
     <a class="btn o" href="https://wa.me/265994040040?text=Hello%20Uthunthu%20Consultancy%2C%20I%20am%20interested%20in%20Team%20Building" target="_blank" rel="noopener">Inquire via WhatsApp</a>
   </div>
 </div>
+
+<div class="card" style="border-top:4px solid var(--gd);margin:32px 0;padding:28px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;background:linear-gradient(135deg,var(--sf) 0%,var(--bg) 100%)">
+  <div>
+    <span class="eyebrow" style="margin-bottom:4px">Full Course Modules</span>
+    <h3 style="margin:4px 0 6px">Need Detailed Modules &amp; Delivery Formats?</h3>
+    <p class="note" style="margin:0;max-width:600px">Download our complete Institutional Profile containing comprehensive syllabus outlines, target audiences, and facilitation methodology.</p>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <a class="btn g" href="images/gallery/UCProfileV1.0.pdf" download="Uthunthu-Consultancy-Institutional-Profile-V1.0.pdf">Download Syllabus (PDF)</a>
+    <a class="btn o" href="images/gallery/UCProfileV1.0.pdf" target="_blank" rel="noopener">View Online</a>
+  </div>
+</div>
 <h2 style="margin-top:48px">Specialized Consulting &amp; Training</h2>
 <div style="display:flex;flex-wrap:wrap;gap:8px">${spec.map(x=>`<a href="#/contact/${encodeURIComponent(x)}" class="tag" style="text-decoration:none;color:var(--tx)" title="Inquire about ${x}">${x} &rarr;</a>`).join("")}</div>
 </div></section>`;
