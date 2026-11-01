@@ -377,16 +377,16 @@ nav {
   opacity: 0;
   transform: scale(1.0);
   transition: opacity 1.8s ease-in-out, transform 9s ease-out;
-  filter: saturate(1.15) contrast(1.05);
+  filter: saturate(1.22) contrast(1.08) brightness(1.02);
 }
 
 .hero-photo-layer.active {
-  opacity: 0.35;
+  opacity: 0.68;
   transform: scale(1.05);
 }
 
 :root[data-theme="dark"] .hero-photo-layer.active {
-  opacity: 0.30;
+  opacity: 0.58;
 }
 
 /* Gradient overlay for contrast and brand colors */
@@ -395,9 +395,9 @@ nav {
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  background: radial-gradient(850px 500px at 85% -5%, rgba(47, 179, 97, 0.30), transparent 65%),
-              radial-gradient(750px 500px at 5% 105%, rgba(91, 86, 214, 0.45), transparent 65%),
-              linear-gradient(180deg, rgba(16, 13, 52, 0.82) 0%, rgba(22, 19, 68, 0.74) 45%, rgba(14, 11, 44, 0.92) 100%);
+  background: radial-gradient(850px 500px at 85% -5%, rgba(47, 179, 97, 0.22), transparent 65%),
+              radial-gradient(750px 500px at 5% 105%, rgba(91, 86, 214, 0.32), transparent 65%),
+              linear-gradient(180deg, rgba(14, 11, 44, 0.52) 0%, rgba(18, 15, 54, 0.36) 45%, rgba(12, 10, 36, 0.72) 100%);
 }
 
 .hero:before {
@@ -423,15 +423,15 @@ nav {
   color: #fff;
   font-size: clamp(2rem, 3.8vw, 3rem);
   margin-bottom: 0.4em;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.85), 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .hero p {
   max-width: 660px;
   font-size: 1.12rem;
-  opacity: 0.92;
+  opacity: 0.96;
   margin-bottom: 1.5em;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 .hero .btn { margin: 6px 10px 6px 0; }
@@ -1767,10 +1767,11 @@ footer strong {
 .hero-vision {
   font-size: 1rem;
   font-style: italic;
-  opacity: 0.78;
+  opacity: 0.95;
   margin-top: 6px;
   margin-bottom: 0;
   color: inherit;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85);
 }
 
 /* ─── Testimonial logo filter (dark mode) ─────────── */
