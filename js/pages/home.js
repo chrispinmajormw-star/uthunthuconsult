@@ -224,6 +224,8 @@ AFTER.home=()=>{
       { file: "youth-skills-1.svg", title: "Youth Skills Development & Financial Empowerment" },
       { file: "economic-empowerment.svg", title: "Community Economic Empowerment Sessions" },
       { file: "governance.svg", title: "Institutional Governance & Leadership" },
+      { file: "baylor.svg", title: "Baylor Foundation Capacity Strengthening" },
+      { file: "mra.svg", title: "Malawi Revenue Authority Strategic Sessions" },
       { file: "luanar-mentoring-2.svg", title: "University Mentoring & Character Transformation" },
       { file: "faith-leaders-1.svg", title: "Faith Leaders' Empowerment at Crossroads Hotel" }
     ];

@@ -8,7 +8,7 @@ const gal=[
 ["Leadership Training","Uthunthu Leadership Training - Advanced Diploma in Leadership and Management","leadership-diploma.jpg"],
 ["Economic Empowerment","Economic Empowerment sessions","economic-empowerment.jpg"],
 ["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-1.jpg"],
-["Skills Development","Skills Development and Financial Empowerment Youth Training","youth-skills-2.jpg"],
+["Skills Development","Skills Development and Financial Literacy Youth Training","skills-development.svg"],
 ["Skills Development","Compassion Malawi youth skills development and mindset change training","compassion-youth-training.jpg"],
 ["Conference at Crossroads Hotel","World Vision faith leaders' empowerment sessions","faith-leaders-1.jpg"],
 ["Faith Leaders' Empowerment","World Vision faith leaders' empowerment sessions","faith-leaders-2.jpg"],
@@ -17,7 +17,12 @@ const gal=[
 ["Media Houses Mentoring","Media","media-houses-mentoring.svg"],
 ["Religious Leaders Forum","Religion","religious-leaders-forum.svg"],
 ["Governance and Capacity Building","World Vision Capacity Building training","wv-lilongwe-capacity.jpg"],
-["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"]
+["Staff Annual Retreats and Retirement Preparation","Annual Retreats","retreats.jpg"],
+["Institutional Capacity Strengthening","Baylor Foundation institutional capacity building","baylor.svg"],
+["Strategic Leadership Sessions","Malawi Revenue Authority (MRA) strategic workshops","mra.svg"],
+["Retirement Preparation & Transition","Staff retirement preparation and life planning session","retirement-preparation2.svg"],
+["Rehabilitation & Personal Growth","Personal freedom, values and reformation sessions","freedom.svg"],
+["Core Facilitation & Workshops","Interactive group dynamics and leadership coaching","front.svg"]
 ];
 // Photos can be .jpg, .jpeg, .png, .webp or .svg: the site tries each type, so only the name before the dot must match.
 const EXT=["svg","jpg","png","webp","jpeg"]; // the first type is tried first; put your main photo type first to avoid 404 messages
